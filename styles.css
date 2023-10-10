@@ -1,0 +1,296 @@
+*{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        list-style-type: none;
+}
+
+
+/*ESTILOS GENERALES*/
+.fuente-clara{color: #eeeeee;}
+.fuente-oscura{color: #22211f;}
+.fuente-acento {font-style: italic;color: rgb(179, 154, 13);}
+ nav ul li {
+        font-size: 14px;
+        line-height: 30px;
+        text-transform: uppercase;
+      }
+      
+      nav ul li a {
+        color: #eeeeee;
+      }
+
+/*ENCABEZADO*/       
+ 
+header{ background-color: rgb(8, 28, 49);
+        font-family: Arial, Helvetica, sans-serif;
+        border: solid black;
+        font-size: large;
+        width: 100%;
+                           
+        }
+ .logo {
+        display: inline-block;
+        font-size: 35px;
+        line-height: 80px;
+        padding: 0 50px;
+        font-weight: bold;}
+
+header {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+}
+
+header nav {
+  height: 80px;
+  float: right;
+
+} 
+
+
+nav ul li a {color: #eeeeee;}        
+nav ul.menu {
+        float: right;
+      }
+      
+      nav ul.menu li {
+        display: inline-block;
+        line-height: 80px;
+        margin: 0 5px;
+      }
+      
+      nav ul.menu li a {
+        color: #eee;
+        font-size: 15px;
+        text-transform: uppercase;
+        padding: 7px 7px;
+      }
+      
+h1 header{padding left: 10px;
+ 
+        
+}
+.inicio{background-color: rgb(8, 28, 49);
+        padding: 40px;
+}
+
+.fijo{
+        position:fixed;
+}
+
+
+#check{display: none;}                  
+.checkbtn{
+        font-size: 25px;
+        color: white;
+        float: right;
+        line-height: 80px;
+        margin-right: 40px;
+        cursor:pointer;
+        display: none;
+
+}
+
+nav ul.menu {
+        float: right;
+      }
+      
+      nav ul.menu li {
+        display: inline-block;
+        line-height: 80px;
+        margin: 0 5px;
+      }
+      nav ul.menu li a {
+        color: #eee;
+        font-size: 15px;
+        text-transform: uppercase;
+        padding: 7px 7px;
+      }
+      .checkbtn {
+        font-size: 25px;
+        color: rgb(186, 5, 5);
+        float: right;
+        line-height: 80px;
+        margin-right: 40px;
+        cursor: pointer;
+        display: none;
+      }
+      
+        /*@media(max-width:768px){
+                .pantalla{
+                background-color:#e40e3c ;}
+                nav ul li {display:none; }
+                .checkbtn{display: block;}
+        }  */   
+        
+
+
+
+main{background-color: rgb(236, 9, 122);}
+
+div{background-color: rgb(109, 202, 198);
+}
+p{font-size: 12px;}
+.destacado{font-size: large ;
+}
+
+.container {
+        display: flex;
+        justify-content:center;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: left;
+
+/*  flex-wrap: wrap; esto es para acomodar las imagenes al agrandar o achicar la pantalla*/
+      }
+.item{  width: 400px;
+        height: 400px;
+        padding: 100px;
+
+}
+
+
+.botones{
+        
+        padding: 25px;
+         
+        
+        
+        }       
+.button {
+        color: #fff;
+        background-color: #5995da; 
+        font-weight: bold;
+        padding: 30px;
+        margin: 30px 200px 30px 200px;
+        
+        text-align: center;
+        border: 3px solid #5d6063; 
+        border-radius: 50px;
+        cursor: pointer;
+        
+        
+        
+        }
+.contacto {
+        font-style: italic;
+        background-color: #eeb75a; 
+        
+        }
+        
+
+.banner{width: 95%;height: 95%;
+        background-color: #e40e3c;
+}
+.greeting{background-color:rgb(117, 226, 45);
+}
+footer
+        {background-color: rgb(233, 151, 208);
+                width: 100%;}
+
+/*PSEUDO CLASES
+Estos se utilizan para cuando pase el mouse por encisa cambie algo
+ya sea el color de fondo, color de fuente)*/
+     
+a:hover {
+                color: rgb(61, 241, 106);
+                }
+/* Esto se utiliza para cambiar de color los botones*/
+
+/*
+ul li:nth-child(odd) {
+                        color: #f2f2f2;
+                        }*/
+
+/*                   @media (max-width: 768px) {
+  /* Aquí puedes escribir los estilos que se aplicarán en pantallas más pequeñas */
+ /* header {
+    background-color: burlywood;
+  }
+
+  .checkbtn {
+    display: block;
+  }
+
+  .navbar {
+    height: 0vh;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background: #2c3e50;
+    text-align: center;
+
+    transition: all 0.5s;
+    overflow: hidden;
+  }
+
+  .navbar ul.menu {
+    float: none;
+    display: block;
+    width: 174px;
+    margin: 0 auto;
+    opacity: 0;
+  }
+
+  .navbar ul.menu li a:hover {
+    color: #b59a61;
+  }
+  /* ACTIVE */
+  /*.navbar.active {
+    height: 100vh;
+  }
+
+  .navbar.active ul.menu {
+    opacity: 1;
+  }
+}   */
+/* MEDIA QUERIES */
+
+/* Estilos para pantallas más pequeñas (hasta 768px) */
+@media (max-width: 768px) {
+        /* Aquí puedes escribir los estilos que se aplicarán en pantallas más pequeñas */
+        header {
+          background-color: burlywood;
+        }
+      
+        .checkbtn {
+          display: block;
+        }
+      
+        .navbar {
+          height: 0vh;
+          position: absolute;
+          top: 80px;
+          left: 0;
+          width: 100%;
+          background: #2c3e50;
+          text-align: center;
+      
+          transition: all 0.5s;
+          overflow: hidden;
+        }
+      
+        .navbar ul.menu {
+          float: none;
+          display: block;
+          width: 174px;
+          margin: 0 auto;
+          opacity: 0;
+        }
+      
+        .navbar ul.menu li a:hover {
+          color: #b59a61;
+        }
+        /* ACTIVE */
+        .navbar.active {
+          height: 100vh;
+        }
+      
+        .navbar.active ul.menu {
+          opacity: 1;
+        }
+      }
+      
